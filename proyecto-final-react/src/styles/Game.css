@@ -1,0 +1,235 @@
+/* Contenedor principal */
+.game-container {
+    max-width: 1200px; 
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #121212;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+    color: #e0e0e0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+  }
+  
+  /* Título */
+  .game-container h2 {
+    text-align: left;
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+    color: white;
+    font-family: 'Racing Sans One', sans-serif;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  /* Botón principal */
+  .game-button {
+    display: block;
+    margin: 0 auto 30px;
+    padding: 12px 24px;
+    background-color: #2c69d3;
+    border: none;
+    border-radius: 8px;
+    color: #121212;
+    font-weight: 600;
+    font-size: 1.3rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .game-button:hover {
+    background-color: #214e9b;
+  }
+  
+  /* Contenedor dificultad */
+  .game-difficulty {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+  }
+  
+  .game-difficulty label {
+    margin-right: 10px;
+    font-weight: 600;
+    color: #2c69d3;
+  }
+  
+  /* Botones de dificultad */
+  .game-difficulty-button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1.5px solid #ddd;
+    background-color: #ddd;
+    color: #121212;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .game-difficulty-button:hover:not(:disabled) {
+    background-color: #a0d8ff;
+    border-color: #00aaff;
+  }
+  
+  .game-difficulty-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  /* Mensajes */
+  .game-message {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  /* Tarjeta pregunta */
+  .game-card {
+    background-color: #1f1f1f;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 170, 255, 0.2);
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+  }
+  
+  /* Sinopsis texto */
+  .game-card p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+  
+  /* Opciones */
+  .game-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  /* Botones opción */
+  .game-option-button {
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: #f0f0f0;
+    color: #121212;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    min-width: 140px;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    user-select: none;
+  }
+  
+  .game-option-button:hover:not(:disabled) {
+    background-color: #d0eefd;
+    border-color: #00aaff;
+  }
+  
+  .game-option-button:disabled {
+    cursor: not-allowed;
+  }
+  
+  /* Correcta */
+  .game-option-correct {
+    background-color: #a8e6cf !important;
+    border-color: #4caf50 !important;
+    color: #1b3a00;
+  }
+  
+  /* Incorrecta */
+  .game-option-incorrect {
+    background-color: #ff8b94 !important;
+    border-color: #e53935 !important;
+    color: #5a0000;
+  }
+  
+  /* Feedback */
+  .game-feedback {
+    margin-top: 18px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    color: #00aaff;
+  }
+  
+  /* Botón siguiente */
+  .game-next-button {
+    display: block;
+    margin: 24px auto 0;
+    padding: 12px 28px;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #121212;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+  }
+  
+  .game-next-button:hover {
+    background-color: #008ecc;
+  }
+  
+  /* Resumen final */
+  .game-summary h3,
+  .game-summary h4 {
+    color: #00aaff;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+  }
+  
+  .game-summary ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+    max-height: 240px;
+    overflow-y: auto;
+    margin-bottom: 24px;
+  }
+  
+  .game-summary li {
+    margin-bottom: 10px;
+    color: #ccc;
+  }
+  
+  .game-summary strong {
+    color: #fff;
+  }
+  
+  .game-summary em {
+    font-style: normal;
+    color: #00d8ff;
+  }
+  @media (max-width: 900px) {
+    .game-container {
+      width: calc(100% - 2rem);   
+      margin: 1rem;              
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .game-container{
+      width: calc(100% - 2rem);   
+      margin: 1rem;              
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+  }

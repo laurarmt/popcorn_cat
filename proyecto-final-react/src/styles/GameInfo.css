@@ -1,0 +1,93 @@
+.game-instructions {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #e0e0e0;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 170, 255, 0.2);
+}
+
+/* Título principal */
+.instructions-header h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  border-bottom: 2px solid #00aaff;
+  padding-bottom: 8px;
+  font-family: 'Racing Sans One', sans-serif;
+}
+
+/* Texto introductorio */
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+/* Encabezados de sección */
+.difficulty-section h3,
+.score-tracking h3 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  border-bottom: 1px solid #00aaff;
+  padding-bottom: 6px;
+}
+
+/* Bloque de dificultad */
+.difficulty {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  background-color: #262626;
+  border-left: 4px solid #00aaff;
+  border-radius: 8px;
+}
+
+/* Título de dificultad */
+.difficulty h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+/* Lista de características */
+.difficulty ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Sección de puntuación */
+.score-tracking p {
+  margin-top: 1rem;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .game-instructions {
+    width: calc(100% - 2rem);  
+    margin: 1rem;        
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}
+
+/* Móviles */
+@media (max-width: 767px) {
+  .game-instructions {
+    width: calc(100% - 2rem);   
+    margin: 1rem;              
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}

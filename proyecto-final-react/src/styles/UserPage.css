@@ -1,0 +1,86 @@
+.user-info-container {
+    background-color: #060606;
+    border-radius: 8px;
+    margin: 20px auto; 
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    color: #c1c4c6;
+}
+
+.login-title {
+    color: #1a3d7b;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Formulario */
+.form-edit-user {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-edit-user h2{
+    color: #d8dadd;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* Botones */
+
+.button-continer{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.cancel-button{
+    width: 100%;
+    max-width: 320px;
+    padding: 12px;
+    background-color: #b30000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    font-size: 16px;
+    }
+    
+    .cancel-button:hover {
+        background-color: #940000;
+    }
+
+
+    @media (max-width: 900px) {
+        .user-info-container{
+          width: calc(100% - 2rem);  
+          margin: 1rem auto;
+      
+          padding: 1rem;
+          box-sizing: border-box;
+        }
+      }
+      
+      /* Móviles */
+      @media (max-width: 767px) {
+        .user-info-container {
+          width: calc(100% - 2rem);   
+          margin: 1rem auto;
+           
+          padding: 1rem;
+          box-sizing: border-box;
+        }
+      }

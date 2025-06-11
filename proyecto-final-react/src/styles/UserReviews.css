@@ -1,0 +1,181 @@
+.my-reviews-container {
+    max-width: 1200px;      
+    margin: 1.5rem auto;      
+  }
+  
+.my-reviews-title {
+  text-align: left !important;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+    font-family: 'Racing Sans One', sans-serif;
+  }
+  
+  .my-reviews-filters {
+    margin-bottom: 2rem;
+  }
+  
+  .my-reviews-filter-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #656565;
+    border-radius: 6px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05);
+  }
+  
+  .my-reviews-empty-message {
+    color: #cccccc;
+    font-style: italic;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .my-reviews-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .my-reviews-item {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    font-family: 'Bebas Neue', sans-serif;
+    color: #f1f1f1;
+  }
+  
+  .my-reviews-movie-title,
+  .my-reviews-date,
+  .my-reviews-rating,
+  .my-reviews-comment {
+    margin: 0.5rem 0;
+    color: #cccccc;
+    font-size: 1rem;
+  }
+  
+  .my-reviews-label {
+    display: block;
+    margin: 1rem;
+    font-weight: bold;
+    color: #7a7979;
+    text-align: left !important;
+  }
+  
+  .my-reviews-error {
+    color: #ff4d4d;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .my-reviews-select,
+  .my-reviews-textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #959595;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    text-align: left !important;
+  }
+  
+  .my-reviews-textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .my-reviews-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    transition: background 0.2s;
+  }
+  
+  .my-reviews-button-save {
+    background-color: #2e6ad2;
+    color: #fff;
+  }
+  
+  .my-reviews-button-cancel {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .my-reviews-button-edit {
+    background-color: #2e6ad2;
+    color: #fff;
+  }
+  
+  .my-reviews-button-delete {
+    background-color: #b30000;
+    color: #fff;
+  }
+  .my-reviews-button-save:hover {
+    background-color: #214e9b; 
+  }
+  
+  .my-reviews-button-cancel:hover {
+    background-color: #c82333; 
+  }
+  
+  .my-reviews-button-edit:hover {
+    background-color: #214e9b; 
+  }
+  
+  .my-reviews-button-delete:hover {
+    background-color: #940000; 
+  }
+  
+  
+  .my-reviews-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #66b2ff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .my-reviews-link:hover {
+    text-decoration: underline;
+  }
+  
+  .my-reviews-separator {
+    margin-top: 1.5rem;
+    border: none;
+    border-top: 1px solid #333;
+  }
+  @media (max-width: 900px) {
+    .my-reviews-container {
+      margin: 20px;
+      padding: 15px 20px;
+    }
+    .my-reviews-filter-input{
+      max-width: 650px;
+    }
+  }
+  
+  /* Media queries para móvil */
+  @media (max-width: 480px) {
+    .my-reviews-container {
+      margin: 15px;
+      padding: 10px 15px; 
+    }
+    .my-reviews-filter-input{
+      max-width: 300px;
+    }
+  }

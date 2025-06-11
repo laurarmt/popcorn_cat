@@ -1,0 +1,128 @@
+.legal-notice {
+  max-width: 1200px;  
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  color: #f1f1f1;
+}
+
+
+.legal-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+  font-family: 'Racing Sans One', sans-serif;
+}
+
+.legal-section-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: #e0e0e0;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.legal-paragraph {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #cccccc;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.legal-list {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.legal-list li {
+  list-style-type: disc;
+  margin-bottom: 0.5rem;
+  color: #cccccc;
+}
+/* Ajustes para móviles (<=600px) */
+@media (max-width: 600px) {
+  /* Contenedor principal */
+  .legal-notice {
+    width: 100vw;        
+    max-width: 100vw;       
+    margin: 1rem 0;           
+    padding: 1rem 1rem;         
+    box-sizing: border-box;  
+    border-radius: 8px;
+    overflow-wrap: break-word;  
+    word-break: break-word;
+  }
+
+  /* Titulos principales */
+  .legal-title {
+    font-size: 1.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .legal-section-title {
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Párrafos y listas */
+  .legal-paragraph,
+  .legal-list {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ccc;
+  }
+
+  /* Listas */
+  .legal-list {
+    margin-left: 1.2rem;
+    padding-left: 1rem;
+  }
+
+  /* Ítems de lista */
+  .legal-list li {
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Ajustes para tablets (<=900px) */
+@media (max-width: 900px) {
+  .legal-notice {
+    max-width: 90%;         
+    margin: 2rem auto;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  .legal-title {
+    font-size: 1.7rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .legal-section-title {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .legal-paragraph,
+  .legal-list {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .legal-list {
+    margin-left: 1.3rem;
+    padding-left: 1rem;
+  }
+}

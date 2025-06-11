@@ -1,0 +1,125 @@
+.credits-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .credits-title {
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Racing Sans One', sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .credits-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+  }
+  
+  .credits-column {
+    flex: 0 0 48%;
+    background-color: #959595;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .credits-section-title {
+    font-size: 2rem;
+    color: #2f4a8d;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4f4e4e;
+    padding-bottom: 0.5rem;
+  }
+  
+  .credits-list {
+    font-size: 1.2em;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .credits-list-item {
+    margin-bottom: 1rem;
+    font-size: 1em;
+  background-color: #c0bfbf;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #3C5492;
+  transition: background-color 0.3s;
+}
+
+.credits-list-item:hover {
+  background-color: #adbad9;
+}
+  
+  .credits-actor-name,
+  .credits-crew-name {
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .credits-character,
+  .credits-job {
+    font-weight: bold;
+  }
+  .scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #5070c2;
+    color: #fff;
+    border: none;
+    padding: 14px 18px;
+    border-radius: 20%;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+
+  .credits-column {
+    flex: 1;
+    background-color: #8d8b8b;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+ 
+  @media (max-width: 900px) {
+    .credits-container {
+      width: calc(100% - 2rem);  
+      margin: 1rem;             
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .credits-columns {
+      flex-direction: column;
+    }
+  
+    .credits-columns > div {
+      flex: 1 1 100%;
+    }
+  }
+  
+  
+  
+  

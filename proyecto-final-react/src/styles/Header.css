@@ -1,0 +1,184 @@
+/* Header.css */
+
+.header-navigation {
+  background-color: #000000;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-items-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 20px;
+  margin-top: 10px;   
+  margin-bottom: 10px;
+}
+
+.nav-link, .link-register {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px; 
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: inline-block; 
+}
+
+.link-register {
+  background-color: #3C5492;
+  color: white;
+}
+
+.link-register:hover {
+  background-color: #243767;
+}
+
+.nav-link {
+  background-color: #923C3D;
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: #582121;
+}
+
+/* Alineación derecha para dropdown específico */
+.dropdown-menu.right-aligned {
+  left: auto;
+  right: 0;
+}
+/* Botón hamburguesa */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Menú por defecto en escritorio */
+.nav-links {
+  display: flex;
+}
+
+/* IMAGEN HOVER LOGO */
+img[alt="Imagen Hover"] {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HAMBURGUESA */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* ------------------- MEDIA QUERIES ------------------- */
+
+/* TABLETS Y MÓVILES */
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links-wrapper {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links-wrapper.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 10px auto;
+  }
+
+
+  .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+  }
+
+  .dropdown-menu {
+    position: static;
+    background-color: #000000;
+    box-shadow: none;
+    border: none;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .dropdown-menu .dropdown-item,
+  .dropdown-menu .nav-link {
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+  }
+
+  img[alt="Imagen Hover"] {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* MÓVILES PEQUEÑOS */
+@media (max-width: 480px) {
+  .header-navigation {
+    padding: 10px;
+  }
+
+  .nav-link,
+  .link-register {
+    font-size: 18px;
+    padding: 6px 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  .dropdown-toggle {
+    font-size: 16px;
+  }
+
+  .dropdown-menu .dropdown-item {
+    font-size: 16px;
+  }
+}

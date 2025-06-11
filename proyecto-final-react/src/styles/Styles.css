@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #3F3D3D;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+  }
+  @font-face {
+    font-family: 'Bebas Neue';
+    src: url('/src/assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Racing Sans One';
+    src: url('/src/assets/fonts/Racing_Sans_One/Racing_Sans_One/RacingSansOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  /*Para que el footer quede abajo*/
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .titles{
+    color: #fff;
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .texts, p{
+    font-family: 'Bebas Neue', sans-serif;
+
+  }
+
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    margin-bottom: 2%;
+    color: white;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #657cb5;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Dropdown */
+/* Contenedor del dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilo del botón */
+.dropdown-toggle {
+  background-color: #3C5492;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;  
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: inline-block; 
+}
+
+.dropdown-toggle:hover {
+  background-color: #243767;
+}
+
+/* Estilo del menú desplegable */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #9da7bf;
+  border: 1px solid #9da7bf;
+  border-radius: 4px;
+  width: 200px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  z-index: 1000;
+}
+
+/* Estilo de cada ítem del menú */
+.dropdown-item {
+  padding: 10px;
+  text-decoration: none;
+  color: #333333;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #606e92;
+}

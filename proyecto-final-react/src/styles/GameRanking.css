@@ -1,0 +1,158 @@
+.ranking-general-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    color: #f1f1f1;
+
+}
+
+/* Contenedor principal del filtro y orden */
+.players-controls {
+    margin: 20px 0;
+    margin: 2rem 0 3rem 0;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    /* espacio entre elementos */
+    flex-wrap: wrap;
+}
+
+/* Input de búsqueda */
+.players-input {
+    padding: 8px 12px;
+    width: 300px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background-color: #1c1c1c;
+    color: #eee;
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.players-input::placeholder {
+    color: #777;
+}
+
+.players-input:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #222;
+}
+
+/* Label del select */
+.players-label {
+    font-size: 1.3rem;
+    color: #ddd;
+    user-select: none;
+}
+
+/* Select de orden */
+.players-select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background-color: #1c1c1c;
+    color: #eee;
+    font-size: 1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.players-select:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #222;
+}
+
+/* Tabla general */
+.players-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #636363;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #eee;
+    font-size: 1.3rem;
+}
+
+/* Encabezados de tabla */
+.players-th {
+    background-color: #777676;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Celdas de tabla */
+.players-td {
+    padding: 0.8rem;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    background-color: #5a5959;
+    transition: background-color 0.2s ease;
+}
+
+/* Hover para filas */
+.players-table tr:hover .players-td {
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+/* Mensaje cuando no hay jugadores */
+.players-empty {
+    text-align: center;
+    font-style: italic;
+    color: #bbbbbb;
+    padding: 1.2rem 0;
+    font-size: 1.3rem;
+}
+
+
+.historial-tabla {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #636363;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 1.2rem;
+  }
+  
+/* Tablets */
+@media (max-width: 900px) {
+    .ranking-general-container{
+      width: calc(100% - 2rem);  
+      margin: 1rem;        
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+  }
+  
+  /* Móviles */
+  @media (max-width: 767px) {
+    .ranking-general-container{
+      width: calc(100% - 2rem);   
+      margin: 1rem;              
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+    .players-table {
+      width: 100%;
+      box-sizing: border-box;
+      max-width: 100%;
+      min-width: unset; 
+    }
+  }
