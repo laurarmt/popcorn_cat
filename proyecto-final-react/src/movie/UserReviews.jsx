@@ -62,7 +62,7 @@ const UserReviews = () => {
     }
 
     if (!editForm.text.trim()) {
-      setTextError("Por favor, escribe un comentario.");
+      setTextError("Por favor, escriba una reseña.");
       return;
     } else {
       setTextError("");
@@ -78,19 +78,15 @@ const UserReviews = () => {
         text: editForm.text,
       }),
     })
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Error al actualizar la reseña");
-        }
-        return res.json();
-      })
-      .then((updatedReview) => {
-        setReviews((prev) =>
-          prev.map((r) => (r.id === reviewId ? updatedReview : r))
-        );
-        window.location.reload();
-        cancelEditing();
-      })
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error("Error al actualizar la reseña");
+      }
+      return res.json();
+    })
+    .then(() => {
+      window.location.reload();
+    })
       .catch((error) => {
         console.error(error);
       });
@@ -201,7 +197,7 @@ const UserReviews = () => {
                     </label>
                     <br />
                     <label className="my-reviews-label">
-                      Comentario:
+                    Reseña:
                       {textError && <p className="my-reviews-error">{textError}</p>}
                       <textarea
                         className="my-reviews-textarea"
@@ -228,7 +224,7 @@ const UserReviews = () => {
                 ) : (
                   <>
                     <p className="my-reviews-rating"><strong>Calificación:</strong> {renderStars(review.rating)}</p>
-                    <p className="my-reviews-comment"><strong>Comentario:</strong> {review.text}</p>
+                    <p className="my-reviews-comment"><strong>Reseña:</strong> {review.text}</p>
                     <button
                       className="my-reviews-button my-reviews-button-edit"
                       onClick={() => startEditing(review)}

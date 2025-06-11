@@ -80,7 +80,6 @@ function Header() {
             style={{ cursor: "pointer", transition: "0.3s" }}
           />
         </li>
-        <li className="nav-item"><Link to="/" className="nav-link">Inicio</Link></li>
         <li className="nav-item"><Link to="/movies" className="nav-link">Películas</Link></li>
         <li className="nav-item"><Link to="/my-reviews" className="nav-link">Mis reseñas</Link></li>
         <li className="nav-item"><Link to="/movies-comparator" className="nav-link">Comparar</Link></li>

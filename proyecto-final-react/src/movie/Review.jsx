@@ -47,7 +47,7 @@ const Review = () => {
     }
 
     if (!review.text.trim()) {
-      setErrors((prev) => ({ ...prev, text: "Por favor, escribe un comentario." }));
+      setErrors((prev) => ({ ...prev, text: "Por favor, escriba una reseña." }));
       isValid = false;
     } else {
       setErrors((prev) => ({ ...prev, text: "" }));
@@ -140,6 +140,7 @@ const Review = () => {
       .then((response) => {
         if (response.ok) {
           setReviews((prevReviews) => prevReviews.filter((r) => r.id !== reviewId));
+          window.location.reload();
         } else {
           throw new Error("Error al eliminar la reseña");
         }
@@ -256,7 +257,7 @@ const Review = () => {
             </label>
             <br />
             <label  className="my-reviews-label2">
-              Comentario:
+              Reseña:
               {createErrors.text && <p className="error">{createErrors.text}</p>}
               <textarea
               className="my-reviews-textarea"
@@ -349,7 +350,7 @@ const Review = () => {
                   </label>
                   <br />
                   <label className="my-reviews-label2">
-                    Comentario:
+                    Reseña:
                     {editErrors.text && <p className="error">{editErrors.text}</p>}
                     <textarea
 
@@ -371,7 +372,7 @@ const Review = () => {
               ) : (
                 <>
                   <p  className="my-reviews-rating"><strong>Calificación:</strong> {renderStars(review.rating)}</p>
-                  <p className="my-reviews-comment"><strong>Comentario:</strong> {review.text}</p>
+                  <p className="my-reviews-comment"><strong>Reseña:</strong> {review.text}</p>
 
                   {review.userId === userId && (
                     <button 

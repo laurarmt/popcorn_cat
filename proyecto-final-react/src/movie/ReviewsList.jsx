@@ -64,7 +64,7 @@ const AllReviews = () => {
       return;
     }
     if (!editForm.text.trim()) {
-      setTextError("Por favor, escribe un comentario.");
+      setTextError("Por favor, escriba una reseña.");
       return;
     }
 
@@ -79,6 +79,8 @@ const AllReviews = () => {
       })
       .then((updatedReview) => {
         setReviews((prev) => prev.map((r) => (r.id === reviewId ? updatedReview : r)));
+
+      window.location.reload();
         cancelEditing();
       })
       .catch((error) => console.error(error));
@@ -93,6 +95,7 @@ const AllReviews = () => {
       .then((res) => {
         if (!res.ok) throw new Error("Error al eliminar la reseña");
         setReviews((prev) => prev.filter((r) => r.id !== reviewId));
+        window.location.reload();
       })
       .catch((error) => console.error(error));
   };
@@ -244,7 +247,7 @@ const AllReviews = () => {
               </label>
               <br />
               <label className="review-label">
-                Comentario:
+                Reseña:
                 {textError && <p className="error">{textError}</p>}
                 <textarea
                   className="textarea-comment"
@@ -269,7 +272,7 @@ const AllReviews = () => {
                 <strong>Calificación:</strong> {renderStars(review.rating)}
               </p>
               <p>
-                <strong>Comentario:</strong> {review.text}
+                <strong>Reseña:</strong> {review.text}
               </p>
               {review.userId === userId && (
                 <button
